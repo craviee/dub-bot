@@ -143,6 +143,10 @@ new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot) 
                //bot.sendChat("@" + data.user.username + " é da Staff.");
                if(data.message.indexOf("chamada") !== -1 && chamada == 0)
                {
+                    if(presentes.indexOf(data.user.username) == -1)
+                    {
+                        presentes.push(data.user.username);
+                    }
                     resp = bot.getQueue();
                     console.log(resp);
                     //resp = JSON.parse(resp);
@@ -162,6 +166,10 @@ new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot) 
                }
                else if((data.message.indexOf("finalizar") !== -1) && (chamada == 1))
                {
+                    if(presentes.indexOf(data.user.username) == -1)
+                    {
+                        presentes.push(data.user.username);
+                    }
                 //count_downs = bot.getScore();
                     chamada = 0;
                     for(var i = 0; i < fila.length; i++)
