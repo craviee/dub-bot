@@ -1,6 +1,6 @@
 var DubAPI = require('dubapi');
 
-new DubAPI({username: 'username', password: 'password'}, function(err, bot) {
+new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot) {
     if (err) return console.error(err);
 
     var resp=0;
