@@ -2,5 +2,5 @@
 while :
 do
 	npm install dubapi
-	node test2.js
+	node test3.js
 done
