@@ -1,4 +1,4 @@
-var DubAPI = require('dubapi');
+﻿var DubAPI = require('dubapi');
 
 new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot) {
     if (err) return console.error(err);
@@ -138,7 +138,7 @@ new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot) 
         // }
         else if(data.message.indexOf("@Putinha-Bot") !== -1)
         {
-            if(bot.isMod(data.user) || bot.isManager(data.user) || bot.isOwner(data.user) ||  bot.isCreator(data.user) || (data.user.username.indexOf("Craviee") !== -1))
+            if(bot.isMod(data.user) || bot.isManager(data.user) || bot.isOwner(data.user) ||  bot.isCreator(data.user) || (data.user.username.indexOf("Anao_Engenheiro") !== -1))
             {
                //bot.sendChat("@" + data.user.username + " é da Staff.");
                if(data.message.indexOf("chamada") !== -1 && chamada == 0)
@@ -196,9 +196,9 @@ new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot) 
                    
                         //console.log("presentes: " + presentes[i]);
                 }
-                else if ((data.user.username.indexOf("Craviee") !== -1) && (data.message.indexOf("skip") !== -1))
+                else if ((data.user.username.indexOf("Anao_Engenheiro") !== -1) && (data.message.indexOf("skip") !== -1))
                     bot.moderateSkip();
-                else if (data.user.username.indexOf("Craviee") !== -1)
+                else if (data.user.username.indexOf("Anao_Engenheiro") !== -1)
                     bot.sendChat(":thumbsup:");
 
                // else
