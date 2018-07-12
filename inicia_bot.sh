@@ -1,6 +1,6 @@
 #!/bin/bash
 while :
 do
-	npm install dubapi
-	node test3.js
+	# npm install dubapi
+	node server.js
 done
