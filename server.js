@@ -1,6 +1,7 @@
 let DubAPI = require('dubapi');
 
-new DubAPI({username: 'AnaoTestBot', password: '123456789'}, function(err, bot)
+//new DubAPI({username: 'AnaoTestBot', password: '123456789'}, function(err, bot)
+new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot)
 {
     function finishAttendanting(allAttendant)
     {
