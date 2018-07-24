@@ -1,6 +1,6 @@
 let DubAPI = require('dubapi');
 
-//new DubAPI({username: 'AnaoTestBot', password: '123456789'}, function(err, bot)
+// new DubAPI({username: 'AnaoTestBot', password: '123456789'}, function(err, bot)
 new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot)
 {
     function finishAttendanting(allAttendant)
@@ -137,7 +137,7 @@ new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot)
     {
         // LOGS
         // console.log(name);
-        bot.sendChat("Bem vindo, " + name.username);
+        bot.sendChat("Bem vindo, " + name.user.username);
         bot.sendChat(":3");
     });
 
