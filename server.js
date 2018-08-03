@@ -1,20 +1,11 @@
-let usernameBot;
-let passwordBot;
-
 let fs = require('fs');
-let data = JSON.parse(fs.readFileSync('data.txt', 'utf8'));
+let data;
 
-// lineReader.eachLine('user.txt', function(line, last)
-// {
-//     if(!last)
-//     {
-//         usernameBot = line;
-//     }
-//     if(last)
-//     {
-//         passwordBot = line;
-//     }
-// });
+if (!fs.existsSync('data.txt'))
+{
+    while (!fs.existsSync('data.txt')) {}
+    data = JSON.parse(fs.readFileSync('data.txt', 'utf8'));
+}
 
 let DubAPI = require('dubapi');
 
