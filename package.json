@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "dependencies": {
-    "dubapi": "^1.6.9"
+    "dubapi": "^1.6.9",
+    "line-reader": "^0.4.0"
   },
   "devDependencies": {},
   "scripts": {

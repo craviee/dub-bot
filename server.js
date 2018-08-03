@@ -1,7 +1,25 @@
+let usernameBot;
+let passwordBot;
+
+let fs = require('fs');
+let data = JSON.parse(fs.readFileSync('data.txt', 'utf8'));
+
+// lineReader.eachLine('user.txt', function(line, last)
+// {
+//     if(!last)
+//     {
+//         usernameBot = line;
+//     }
+//     if(last)
+//     {
+//         passwordBot = line;
+//     }
+// });
+
 let DubAPI = require('dubapi');
 
 // new DubAPI({username: 'AnaoTestBot', password: '123456789'}, function(err, bot)
-new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot)
+new DubAPI({username: data.user, password: data.pass}, function(err, bot)
 {
     function finishAttendanting(allAttendant)
     {
@@ -99,14 +117,14 @@ new DubAPI({username: 'Putinha-Bot', password: '123456789'}, function(err, bot)
         "Nunca.",
         "Sei lá, cara, te vira, filho da puta.",
         "Pergunta pra sua mãe, aquela puta.",
-        "Apenas se você estiver tão motivado quanto o mendigo que bateu no Oleg"
+        "Apenas se a motivação for tão grande quanto a do mendigo que bateu no Oleg"
     ];
 
     console.log('Running DubAPI v' + bot.version);
 
     function connect()
     {
-        bot.connect('radioanao');
+        bot.connect(data.room);
     }
 
     bot.on('connected', function(name)
