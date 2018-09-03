@@ -1,0 +1,5 @@
+{
+    "username":"Marco_Casale",
+    "password":"123456789",
+    "room":"radioanao"
+}
