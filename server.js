@@ -1,11 +1,12 @@
 let fs = require('fs');
 let data;
 
-if (!fs.existsSync('data.txt'))
+while (!fs.existsSync('data.txt'))
 {
-    while (!fs.existsSync('data.txt')) {}
-    data = JSON.parse(fs.readFileSync('data.txt', 'utf8'));
+    console.log("Create the file data.txt with the right JSON")
 }
+
+data = JSON.parse(fs.readFileSync('data.txt', 'utf8'));
 
 let DubAPI = require('dubapi');
 
