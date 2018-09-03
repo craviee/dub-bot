@@ -9,7 +9,6 @@ if (!fs.existsSync('data.txt'))
 
 let DubAPI = require('dubapi');
 
-// new DubAPI({username: 'AnaoTestBot', password: '123456789'}, function(err, bot)
 new DubAPI({username: data.user, password: data.pass}, function(err, bot)
 {
     function finishAttendanting(allAttendant)
