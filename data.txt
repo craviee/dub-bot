@@ -1,5 +1,5 @@
 {
-    "user":"Marco_Casale",
-    "pass":"123456789",
-    "room":"radioanao"
+    "user":"mybotname",
+    "pass":"mypass",
+    "room":"myroomname"
 }
