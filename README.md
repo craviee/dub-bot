@@ -14,13 +14,11 @@ NodeJs and npm.
 
 2. npm install;
 
-3. Put the user, password and room in the beginning of server.js file.
+3. Put the username, password and room in data.txt file.
 
 ## How to use:
 
 Start the bot with _node server.js_, then quote the Bot with _chamada_ and wait.
 Example: _@Putinha-Bot chamada_
-
-If you're gonna use this program, please use your own bot account.
 
 ![Dubtrack Icon](https://i1.sndcdn.com/avatars-000230998258-uz2zbm-t500x500.jpg)
